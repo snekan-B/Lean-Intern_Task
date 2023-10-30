@@ -1,0 +1,96 @@
+@keyframes moveTopLeftCircle {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    25% {
+        top: 0;
+        left: 75vw;
+    }
+
+    50% {
+        top: 75vh;
+        left: 75vw;
+    }
+
+    75% {
+        top: 75vh;
+        left: 0;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes moveBottomRightCircle {
+    0% {
+        top: 75vh;
+        left: 75vw;
+    }
+
+    25% {
+        top: 75vh;
+        left: 0;
+    }
+
+    50% {
+        top: 0;
+        left: 0;
+    }
+
+    75% {
+        top: 0;
+        left: 75vw;
+    }
+
+    100% {
+        top: 75vh;
+        left: 75vw;
+    }
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.circleTopLeft {
+    position: absolute;
+    width: 600px;
+    filter: blur(350px);
+    height: 600px;
+    border-radius: 50%;
+    background-color: #FF00B8;
+    animation: moveTopLeftCircle 12s linear infinite;
+}
+
+.circleBottomRight {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    filter: blur(330px);
+    border-radius: 50%;
+    background-color: #772BF2;
+    animation: moveBottomRightCircle 12s linear infinite;
+}
+
+@media (max-width: 400px) {
+    .circleTopLeft {
+        width: 300px;
+        height: 300px;
+        filter: blur(150px);
+    }
+
+    .circleBottomRight {
+        width: 300px;
+        height: 300px;
+        filter: blur(150px);
+    }
+}

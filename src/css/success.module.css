@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600;1,700&family=Montserrat:wght@400;500;600&family=Open+Sans:wght@400;500;600&family=Poppins:ital,wght@0,300;0,500;0,600;1,300&family=Rubik:wght@300;400;500;600;700;800&family=Sen:wght@400;700;800&family=Work+Sans:wght@300&display=swap");
+
+.container {
+  position: relative;
+}
+
+.confetti {
+  position: absolute;
+  top: 180px;
+  left: 340px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.card {
+  width: 699px;
+  height: 330px;
+  background: linear-gradient(to right, #742e60, #543884);
+  display: flex;
+  color: white;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 24px;
+  padding: 64px;
+  position: absolute;
+  top: 180px;
+  left: 340px;
+  z-index: 1;
+}
+
+.cardHeading {
+  line-height: 64px;
+  font-size: 64px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 24px;
+}
+
+.button {
+  width: 224px;
+  height: 52px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 32px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin-top: 72px;
+}
+
+.cardSubText {
+  margin-top: 5px;
+  font-size: 24px;
+  color: #cccccc;
+  font-weight: 400px;
+  line-height: 28.8px;
+  font-family: "Poppins", sans-serif;
+}
+
+.Highlight {
+  color: white;
+  font-weight: 500;
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 230px;
+    height: 200px;
+    background: linear-gradient(to right, #742e60, #543884);
+    display: flex;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 24px;
+    padding: 8px, 16px, 8px, 16px;
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    z-index: 1;
+  }
+
+  .cardHeading {
+    line-height: 24px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 24px;
+  }
+
+  .cardSubText {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #cccccc;
+    font-weight: 400px;
+    line-height: 14.8px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .button {
+    width: 152px;
+    height: 34px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    margin-top: 72px;
+  }
+}
